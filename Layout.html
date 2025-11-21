@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tailwind Layout Examples</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-6 space-y-10 bg-gray-50">
+
+  <!-- TITLE -->
+  <h1 class="text-3xl font-bold text-center">Tailwind CSS Layout Examples</h1>
+
+  <!-- 1. Aspect Ratio -->
+  <section>
+    <h2 class="text-xl font-semibold mb-2">1. Aspect Ratio</h2>
+    <div class="w-64 aspect-video bg-blue-300 flex items-center justify-center">
+      16:9 Video Box
+    </div>
+  </section>
+
+  <!-- 2. Container -->
+  <section>
+    <h2 class="text-xl font-semibold mb-2">2. Container</h2>
+    <div class="container mx-auto bg-green-200 p-4">
+      This is a responsive centered container
+    </div>
+  </section>
+
+  <!-- 3. Columns -->
+  <section>
+    <h2 class="text-xl font-semibold mb-2">3. Columns</h2>
+    <div class="columns-3 gap-4 bg-white p-2">
+      <p>This is column 1 text. Tailwind helps create newspaper-style layouts.</p>
+      <p>This is column 2 text. Columns automatically balance height.</p>
+      <p>This is column 3 text displayed beside the other columns.</p>
+    </div>
+  </section>
+
+  <!-- 4. Box Sizing -->
+  <section>
+    <h2 class="text-xl font-semibold mb-2">4. Box Sizing</h2>
+    <div class="w-48 p-4 box-border bg-purple-300">
+      Box Border Model (padding included)
+    </div>
+  </section>
+
+  <!-- 5. Display -->
+  <section>
+    <h2 class="text-xl font-semibold mb-2">5. Display (Flex Example)</h2>
+    <div class="flex gap-4">
+      <div class="bg-blue-400 p-4">Box 1</div>
+      <div class="bg-green-400 p-4">Box 2</div>
+    </div>
+  </section>
+
+  <!-- 6. Float -->
+  <section>
+    <h2 class="text-xl font-semibold mb-2">6. Float</h2>
+    <img src="bggg.jpg" class="float-right w-32" />
+    <p class="bg-gray-200 p-2">
+      This text wraps around the floating image. Float is useful for images in paragraphs.
+    </p>
+  </section>
+
+  <!-- 7. Clear -->
+  <section class="clear-both pt-8">
+    <h2 class="text-xl font-semibold mb-2">7. Clear Float</h2>
+    <p class="clear-both bg-yellow-200 p-2">
+      This paragraph clears the float above.
+    </p>
+  </section>
+
+  <!-- 8. Object Fit -->
+  <section>
+    <h2 class="text-xl font-semibold mb-2">8. Object Fit</h2>
+    <img src="bggg.jpg" 
+         class="w-40 h-40 object-cover rounded border" />
+  </section>
+
+  <!-- 9. Object Position -->
+  <section>
+    <h2 class="text-xl font-semibold mb-2">9. Object Position</h2>
+    <img src="bggg.jpg" 
+         class="w-40 h-40 object-cover object-top rounded border" />
+    <p class="text-sm mt-1">This image is cropped from the top.</p>
+  </section>
+
+  <!-- 10. Overflow -->
+  <section>
+    <h2 class="text-xl font-semibold mb-2">10. Overflow</h2>
+    <div class="w-40 h-20 overflow-auto bg-red-200 p-2">
+      This is very long content scrolling inside the box. This is very long content...
+    </div>
+  </section>
+
+  <!-- 11. Visibility -->
+  <section>
+    <h2 class="text-xl font-semibold mb-2">11. Visibility</h2>
+    <p class="visible bg-green-300 p-2 mb-2">This text is visible</p>
+    <p class="invisible bg-gray-300 p-2">This text is invisible</p>
+  </section>
+
+  <!-- 12. Z-Index -->
+  <section>
+    <h2 class="text-xl font-semibold mb-2">12. Z-Index</h2>
+    <div class="relative h-28">
+      <div class="absolute w-28 h-28 bg-blue-400 z-10 flex items-center justify-center">
+        Front (z-10)
+      </div>
+      <div class="absolute w-28 h-28 bg-red-400 top-5 left-5 z-0 flex items-center justify-center">
+        Back (z-0)
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

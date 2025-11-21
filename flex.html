@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tailwind Flexbox Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-6 bg-gray-50 space-y-10">
+
+  <h1 class="text-3xl font-bold text-center">Tailwind CSS Flexbox Examples</h1>
+
+  <!-- Flex Direction -->
+  <section>
+    <h2 class="text-xl font-semibold mb-2">1. Flex Direction (Row)</h2>
+    <div class="flex flex-row gap-4 bg-blue-100 p-4">
+      <div class="bg-blue-400 p-4 text-white">Box 1</div>
+      <div class="bg-blue-400 p-4 text-white">Box 2</div>
+      <div class="bg-blue-400 p-4 text-white">Box 3</div>
+    </div>
+  </section>
+
+  <!-- Justify Content -->
+  <section>
+    <h2 class="text-xl font-semibold mb-2">2. Justify Content</h2>
+    <div class="flex justify-between bg-green-100 p-4">
+      <div class="bg-green-400 p-4 text-white">Left</div>
+      <div class="bg-green-400 p-4 text-white">Right</div>
+    </div>
+  </section>
+
+  <!-- Align Items -->
+  <section>
+    <h2 class="text-xl font-semibold mb-2">3. Align Items (Center)</h2>
+    <div class="flex items-center h-28 bg-yellow-100 p-4">
+      <div class="bg-yellow-400 p-4 text-white">Centered Box</div>
+    </div>
+  </section>
+
+  <!-- Flex Wrap -->
+  <section>
+    <h2 class="text-xl font-semibold mb-2">4. Flex Wrap</h2>
+    <div class="flex flex-wrap gap-4 bg-purple-100 p-4">
+      <div class="bg-purple-400 p-4 text-white w-32">Box 1</div>
+      <div class="bg-purple-400 p-4 text-white w-32">Box 2</div>
+      <div class="bg-purple-400 p-4 text-white w-32">Box 3</div>
+      <div class="bg-purple-400 p-4 text-white w-32">Box 4</div>
+    </div>
+  </section>
+
+  <!-- Flex Grow -->
+  <section>
+    <h2 class="text-xl font-semibold mb-2">5. Flex Grow</h2>
+    <div class="flex gap-4 bg-red-100 p-4">
+      <div class="bg-red-400 p-4 text-white flex-grow">Grows to fill space</div>
+      <div class="bg-red-400 p-4 text-white">Fixed</div>
+    </div>
+  </section>
+
+</body>
+</html>

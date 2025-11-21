@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Grid Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-10">
+
+  <h1 class="text-2xl font-bold mb-5">Tailwind CSS Grid Examples</h1>
+
+  <!-- Grid Template Columns -->
+  <div class="mb-10">
+    <h2 class="font-bold mb-3">1. Grid Template Columns (grid-cols-3)</h2>
+    <div class="grid grid-cols-3 gap-4 bg-white p-4 rounded shadow">
+      <div class="bg-blue-300 p-3 text-center">1</div>
+      <div class="bg-blue-300 p-3 text-center">2</div>
+      <div class="bg-blue-300 p-3 text-center">3</div>
+    </div>
+  </div>
+
+  <!-- Grid Column Start / End -->
+  <div class="mb-10">
+    <h2 class="font-bold mb-3">2. Grid Column Start / End</h2>
+    <div class="grid grid-cols-4 gap-4 bg-white p-4 rounded shadow">
+      <div class="col-span-2 bg-green-300 p-3 text-center">col-span-2</div>
+      <div class="bg-green-300 p-3 text-center">A</div>
+      <div class="bg-green-300 p-3 text-center">B</div>
+    </div>
+  </div>
+
+  <!-- Grid Template Rows -->
+  <div class="mb-10">
+    <h2 class="font-bold mb-3">3. Grid Template Rows (grid-rows-3)</h2>
+    <div class="grid grid-rows-3 gap-4 bg-white p-4 rounded shadow h-48">
+      <div class="bg-purple-300 p-3 text-center">Row 1</div>
+      <div class="bg-purple-300 p-3 text-center">Row 2</div>
+      <div class="bg-purple-300 p-3 text-center">Row 3</div>
+    </div>
+  </div>
+
+  <!-- Grid Row Start / End -->
+  <div class="mb-10">
+    <h2 class="font-bold mb-3">4. Grid Row Start / End</h2>
+    <div class="grid grid-cols-3 grid-rows-3 gap-4 bg-white p-4 rounded shadow h-56">
+      <div class="row-span-2 bg-red-300 p-3 text-center">row-span-2</div>
+      <div class="bg-red-300 p-3 text-center">X</div>
+      <div class="bg-red-300 p-3 text-center">Y</div>
+    </div>
+  </div>
+
+  <!-- Grid Auto Flow -->
+  <div class="mb-10">
+    <h2 class="font-bold mb-3">5. Grid Auto Flow (grid-flow-col)</h2>
+    <div class="grid grid-flow-col gap-4 bg-white p-4 rounded shadow">
+      <div class="bg-yellow-300 p-3 text-center">1</div>
+      <div class="bg-yellow-300 p-3 text-center">2</div>
+      <div class="bg-yellow-300 p-3 text-center">3</div>
+    </div>
+  </div>
+
+  <!-- Grid Auto Columns -->
+  <div class="mb-10">
+    <h2 class="font-bold mb-3">6. Grid Auto Columns (auto-cols-fr)</h2>
+    <div class="grid grid-flow-col auto-cols-fr gap-4 bg-white p-4 rounded shadow">
+      <div class="bg-orange-300 p-3 text-center">A</div>
+      <div class="bg-orange-300 p-3 text-center">B</div>
+      <div class="bg-orange-300 p-3 text-center">C</div>
+    </div>
+  </div>
+
+  <!-- Grid Auto Rows -->
+  <div class="mb-10">
+    <h2 class="font-bold mb-3">7. Grid Auto Rows (auto-rows-min)</h2>
+    <div class="grid grid-cols-2 auto-rows-min gap-4 bg-white p-4 rounded shadow">
+      <div class="bg-pink-300 p-3 text-center">Small</div>
+      <div class="bg-pink-300 p-3 text-center h-20">Tall</div>
+    </div>
+  </div>
+
+  <!-- Gap -->
+  <div class="mb-10">
+    <h2 class="font-bold mb-3">8. Gap (gap-6)</h2>
+    <div class="grid grid-cols-3 gap-6 bg-white p-4 rounded shadow">
+      <div class="bg-cyan-300 p-3 text-center">1</div>
+      <div class="bg-cyan-300 p-3 text-center">2</div>
+      <div class="bg-cyan-300 p-3 text-center">3</div>
+    </div>
+  </div>
+
+  <!-- Justify Content -->
+  <div class="mb-10">
+    <h2 class="font-bold mb-3">9. Justify Content (justify-center)</h2>
+    <div class="grid grid-cols-3 justify-center gap-4 bg-white p-4 rounded shadow">
+      <div class="bg-lime-300 p-3 text-center">1</div>
+      <div class="bg-lime-300 p-3 text-center">2</div>
+    </div>
+  </div>
+
+  <!-- Justify Items -->
+  <div class="mb-10">
+    <h2 class="font-bold mb-3">10. Justify Items (justify-items-end)</h2>
+    <div class="grid grid-cols-3 justify-items-end gap-4 bg-white p-4 rounded shadow">
+      <div class="bg-teal-300 p-3">A</div>
+      <div class="bg-teal-300 p-3">B</div>
+      <div class="bg-teal-300 p-3">C</div>
+    </div>
+  </div>
+
+  <!-- Justify Self -->
+  <div class="mb-10">
+    <h2 class="font-bold mb-3">11. Justify Self (justify-self-center)</h2>
+    <div class="grid grid-cols-3 gap-4 bg-white p-4 rounded shadow">
+      <div class="bg-indigo-300 p-3 justify-self-center">Centered</div>
+      <div class="bg-indigo-300 p-3">Left</div>
+      <div class="bg-indigo-300 p-3">Right</div>
+    </div>
+  </div>
+
+  <!-- Align Content -->
+  <div class="mb-10">
+    <h2 class="font-bold mb-3">12. Align Content (content-center)</h2>
+    <div class="grid grid-rows-3 content-center gap-2 bg-white p-4 rounded shadow h-48">
+      <div class="bg-rose-300 p-3 text-center">A</div>
+      <div class="bg-rose-300 p-3 text-center">B</div>
+      <div class="bg-rose-300 p-3 text-center">C</div>
+    </div>
+  </div>
+
+  <!-- Align Items -->
+  <div class="mb-10">
+    <h2 class="font-bold mb-3">13. Align Items (items-end)</h2>
+    <div class="grid grid-cols-3 items-end gap-4 bg-white p-4 rounded shadow h-32">
+      <div class="bg-sky-300 p-3">Item</div>
+      <div class="bg-sky-300 p-3 h-16">Item</div>
+      <div class="bg-sky-300 p-3 h-20">Item</div>
+    </div>
+  </div>
+
+  <!-- Align Self -->
+  <div class="mb-10">
+    <h2 class="font-bold mb-3">14. Align Self (self-center)</h2>
+    <div class="grid grid-cols-3 gap-4 bg-white p-4 rounded shadow h-32">
+      <div class="bg-emerald-300 p-3 self-center">Centered</div>
+      <div class="bg-emerald-300 p-3">Top</div>
+      <div class="bg-emerald-300 p-3">Bottom</div>
+    </div>
+  </div>
+
+  <!-- Place Content -->
+  <div class="mb-10">
+    <h2 class="font-bold mb-3">15. Place Content (place-content-center)</h2>
+    <div class="grid place-content-center gap-2 bg-white p-4 rounded shadow h-32">
+      <div class="bg-violet-300 p-3 text-center">Centered Box</div>
+    </div>
+  </div>
+
+  <!-- Place Items -->
+  <div class="mb-10">
+    <h2 class="font-bold mb-3">16. Place Items (place-items-end)</h2>
+    <div class="grid grid-cols-3 place-items-end gap-4 bg-white p-4 rounded shadow h-40">
+      <div class="bg-yellow-200 p-3">A</div>
+      <div class="bg-yellow-200 p-3 h-16">B</div>
+      <div class="bg-yellow-200 p-3 h-20">C</div>
+    </div>
+  </div>
+
+  <!-- Place Self -->
+  <div class="mb-10">
+    <h2 class="font-bold mb-3">17. Place Self (place-self-center)</h2>
+    <div class="grid grid-cols-3 gap-4 bg-white p-4 rounded shadow h-32">
+      <div class="bg-red-200 p-3 place-self-center">Centered</div>
+      <div class="bg-red-200 p-3">Item</div>
+      <div class="bg-red-200 p-3">Item</div>
+    </div>
+  </div>
+
+</body>
+</html>
