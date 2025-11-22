@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tailwind CSS Alignment Examples</title>
+  <!-- Using CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-10 space-y-10">
+
+  <!-- Title -->
+  <h1 class="text-3xl font-bold text-center">Tailwind CSS Alignment Examples</h1>
+
+
+  <!-- 1. JUSTIFY CONTENT -->
+  <section class="bg-white p-6 rounded shadow space-y-4">
+    <h2 class="text-xl font-semibold">1. justify-content</h2>
+
+    <!-- justify-start -->
+    <div class="flex justify-start bg-blue-100 p-3">
+      <div class="bg-blue-500 text-white px-4 py-2">Start</div>
+      <div class="bg-blue-500 text-white px-4 py-2 ml-2">Box</div>
+    </div>
+
+    <!-- justify-center -->
+    <div class="flex justify-center bg-green-100 p-3">
+      <div class="bg-green-500 text-white px-4 py-2">Center</div>
+      <div class="bg-green-500 text-white px-4 py-2 ml-2">Box</div>
+    </div>
+
+    <!-- justify-end -->
+    <div class="flex justify-end bg-pink-100 p-3">
+      <div class="bg-pink-500 text-white px-4 py-2">End</div>
+      <div class="bg-pink-500 text-white px-4 py-2 ml-2">Box</div>
+    </div>
+
+    <!-- justify-between -->
+    <div class="flex justify-between bg-purple-100 p-3">
+      <div class="bg-purple-500 text-white px-4 py-2">A</div>
+      <div class="bg-purple-500 text-white px-4 py-2">B</div>
+      <div class="bg-purple-500 text-white px-4 py-2">C</div>
+    </div>
+  </section>
+
+
+
+  <!-- 2. JUSTIFY ITEMS -->
+  <section class="bg-white p-6 rounded shadow space-y-4">
+    <h2 class="text-xl font-semibold">2. justify-items (Grid)</h2>
+
+    <div class="grid grid-cols-3 justify-items-center gap-3 bg-yellow-100 p-4">
+      <div class="bg-yellow-500 text-white px-4 py-2">Item 1</div>
+      <div class="bg-yellow-500 text-white px-4 py-2">Item 2</div>
+      <div class="bg-yellow-500 text-white px-4 py-2">Item 3</div>
+    </div>
+  </section>
+
+
+
+  <!-- 3. JUSTIFY SELF -->
+  <section class="bg-white p-6 rounded shadow space-y-4">
+    <h2 class="text-xl font-semibold">3. justify-self (Grid)</h2>
+
+    <div class="grid grid-cols-3 gap-3 bg-red-100 p-4">
+      <div class="bg-red-500 text-white px-4 py-2 justify-self-start">Start</div>
+      <div class="bg-red-500 text-white px-4 py-2 justify-self-center">Center</div>
+      <div class="bg-red-500 text-white px-4 py-2 justify-self-end">End</div>
+    </div>
+  </section>
+
+
+
+  <!-- 4. ALIGN CONTENT -->
+  <section class="bg-white p-6 rounded shadow space-y-4">
+    <h2 class="text-xl font-semibold">4. align-content</h2>
+
+    <div class="flex flex-wrap content-center bg-blue-50 h-40 p-3 gap-2">
+      <div class="bg-blue-600 text-white p-2">1</div>
+      <div class="bg-blue-600 text-white p-2">2</div>
+      <div class="bg-blue-600 text-white p-2">3</div>
+      <div class="bg-blue-600 text-white p-2">4</div>
+      <div class="bg-blue-600 text-white p-2">5</div>
+      <div class="bg-blue-600 text-white p-2">6</div>
+    </div>
+  </section>
+
+
+
+  <!-- 5. ALIGN ITEMS -->
+  <section class="bg-white p-6 rounded shadow space-y-4">
+    <h2 class="text-xl font-semibold">5. align-items</h2>
+
+    <div class="flex items-center bg-green-50 h-24 p-3 gap-2">
+      <div class="bg-green-600 text-white p-3">A</div>
+      <div class="bg-green-600 text-white p-5">B</div>
+      <div class="bg-green-600 text-white p-8">C</div>
+    </div>
+  </section>
+
+
+
+  <!-- 6. ALIGN SELF -->
+  <section class="bg-white p-6 rounded shadow space-y-4">
+    <h2 class="text-xl font-semibold">6. align-self</h2>
+
+    <div class="flex bg-orange-50 h-28 p-3 gap-3">
+      <div class="bg-orange-600 text-white p-3 self-start">Start</div>
+      <div class="bg-orange-600 text-white p-3 self-center">Center</div>
+      <div class="bg-orange-600 text-white p-3 self-end">End</div>
+    </div>
+  </section>
+
+
+
+  <!-- 7. PLACE CONTENT -->
+  <section class="bg-white p-6 rounded shadow space-y-4">
+    <h2 class="text-xl font-semibold">7. place-content</h2>
+
+    <div class="grid place-content-center gap-3 bg-purple-50 h-40 p-3">
+      <div class="bg-purple-600 text-white p-3">A</div>
+      <div class="bg-purple-600 text-white p-3">B</div>
+    </div>
+  </section>
+
+
+
+  <!-- 8. PLACE ITEMS -->
+  <section class="bg-white p-6 rounded shadow space-y-4">
+    <h2 class="text-xl font-semibold">8. place-items</h2>
+
+    <div class="grid grid-cols-2 place-items-center gap-3 bg-pink-50 p-4">
+      <div class="bg-pink-600 text-white p-3">Item 1</div>
+      <div class="bg-pink-600 text-white p-3">Item 2</div>
+    </div>
+  </section>
+
+
+
+  <!-- 9. PLACE SELF -->
+  <section class="bg-white p-6 rounded shadow space-y-4">
+    <h2 class="text-xl font-semibold">9. place-self</h2>
+
+    <div class="grid grid-cols-3 gap-3 bg-gray-200 p-4 h-40">
+      <div class="bg-gray-700 text-white p-3 place-self-start">Start</div>
+      <div class="bg-gray-700 text-white p-3 place-self-center">Center</div>
+      <div class="bg-gray-700 text-white p-3 place-self-end">End</div>
+    </div>
+  </section>
+
+</body>
+</html>
