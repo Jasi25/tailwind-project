@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Filters Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-8 flex flex-col gap-8">
+
+  <!-- Visual Filters -->
+  <h2 class="text-xl font-bold">Visual Filters</h2>
+  <div class="flex gap-4">
+    <img src="me.png" class="blur-sm">
+    <img src="me.png" class="brightness-125 contrast-125">
+    <img src="me.png" class="grayscale">
+    <img src="me.png" class="invert">
+    <img src="me.png" class="sepia">
+    <img src="me.png" class="hue-rotate-90">
+  </div>
+
+  <!-- Backdrop Filters -->
+  <h2 class="text-xl font-bold mt-8">Backdrop Filters</h2>
+  <div class="relative h-32 w-full bg-[url('me.png')] bg-cover flex items-center justify-center text-white font-bold">
+    <div class="backdrop-blur-md backdrop-brightness-150 p-4">
+      Backdrop Blur & Brightness
+    </div>
+  </div>
+
+</body>
+</html>

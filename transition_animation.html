@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Transitions & Animations</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-8 flex flex-col gap-8">
+
+  <!-- Transition Target & Duration -->
+  <button class="bg-blue-500 text-white px-4 py-2 rounded transition-all duration-500 hover:bg-green-500">
+    Hover Me (All Properties)
+  </button>
+
+  <button class="bg-purple-500 text-white px-4 py-2 rounded transition-colors duration-700 hover:bg-pink-500">
+    Hover Me (Colors Only)
+  </button>
+
+  <button class="bg-yellow-500 text-white px-4 py-2 rounded transition-transform duration-1000 hover:scale-125">
+    Hover Me (Transform Only)
+  </button>
+
+  <!-- Delay -->
+  <button class="bg-red-500 text-white px-4 py-2 rounded transition-all duration-500 delay-300 hover:bg-indigo-500">
+    Delayed Transition
+  </button>
+
+  <!-- Timing Function -->
+  <button class="bg-green-500 text-white px-4 py-2 rounded transition-all duration-500 ease-in hover:scale-110">
+    Ease In
+  </button>
+
+  <button class="bg-orange-500 text-white px-4 py-2 rounded transition-all duration-500 ease-out hover:scale-110">
+    Ease Out
+  </button>
+
+  <button class="bg-teal-500 text-white px-4 py-2 rounded transition-all duration-500 ease-in-out hover:scale-110">
+    Ease In-Out
+  </button>
+
+  <!-- Animations -->
+  <div class="w-12 h-12 bg-red-500 animate-spin"></div>
+  <div class="w-12 h-12 bg-blue-500 animate-bounce"></div>
+  <div class="w-12 h-12 bg-green-500 animate-pulse"></div>
+  <div class="w-12 h-12 bg-purple-500 animate-ping"></div>
+
+</body>
+</html>

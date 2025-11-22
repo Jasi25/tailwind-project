@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Borders Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-8 flex flex-col gap-8">
+
+  <!-- Border Width -->
+  <div class="border p-4 text-center">Border Default (1px)</div>
+  <div class="border-2 p-4 text-center">Border 2px</div>
+  <div class="border-4 p-4 text-center">Border 4px</div>
+
+  <!-- Border on the specific sides -->
+  <div class="border-x-4 border-red-500 p-4 text-center">Border Left & Right</div>
+  <div class="border-y-4 border-green-500 p-4 text-center">Border Top & Bottom</div>
+
+  <!-- Border Color -->
+  <div class="border-4 border-blue-500 p-4 text-center">Blue Border</div>
+
+  <!-- Border Style -->
+  <div class="border-4 border-solid border-black p-4 text-center">Solid Border</div>
+  <div class="border-4 border-dashed border-purple-500 p-4 text-center">Dashed Border</div>
+  <div class="border-4 border-dotted border-pink-500 p-4 text-center">Dotted Border</div>
+  <div class="border-4 border-double border-yellow-500 p-4 text-center">Double Border</div>
+
+  <!-- Border Radius -->
+  <div class="border-4 border-yellow-500 rounded p-4 text-center">Rounded Corners</div>
+  <div class="border-4 border-yellow-500 rounded-lg p-4 text-center">Large Rounded Corners</div>
+  <div class="border-4 border-yellow-500 rounded-full p-4 w-32 h-32 flex items-center justify-center text-center mx-auto">
+    Fully Circular
+  </div>
+
+  <!-- Divide Utilities -->
+  <div class="divide-y divide-gray-500 border border-pink-300">
+    <p class="p-2">Item 1</p>
+    <p class="p-2">Item 2</p>
+    <p class="p-2">Item 3</p>
+  </div>
+
+  <div class="divide-x divide-red-500 border border-yellow-300 flex">
+    <p class="p-4 flex-1 text-center">Item A</p>
+    <p class="p-4 flex-1 text-center">Item B</p>
+    <p class="p-4 flex-1 text-center">Item C</p>
+  </div>
+
+  <!-- Outline -->
+  <button class="outline outline-2 outline-blue-500 p-2 mt-4">Button with Outline</button>
+
+</body>
+</html>

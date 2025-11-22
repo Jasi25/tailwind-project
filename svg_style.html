@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind SVG Styling</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-8 flex flex-col gap-8 items-center">
+
+  <!-- SVG Fill -->
+  <svg class="w-16 h-16 fill-red-500" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10"/>
+  </svg>
+
+  <!-- SVG Stroke -->
+  <svg class="w-16 h-16 stroke-blue-500 stroke-2" viewBox="0 0 24 24" fill="none">
+    <rect x="4" y="4" width="16" height="16"/>
+  </svg>
+
+  <!-- Combined Fill & Stroke -->
+  <svg class="w-16 h-16 fill-green-400 stroke-black stroke-2" viewBox="0 0 24 24">
+    <polygon points="12,2 22,22 2,22"/>
+  </svg>
+
+</body>
+</html>
