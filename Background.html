@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Backgrounds Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-8 flex flex-col gap-8">
+
+  <!-- Background Color -->
+  <div class="bg-blue-400 text-white p-4 text-center font-bold">
+    Background Color: Blue
+  </div>
+
+  <!-- Background Image -->
+  <div class="bg-[url('2.jpeg')] bg-center bg-cover h-32 w-full flex items-center justify-center text-white font-bold">
+    Background Image Center + Cover
+  </div>
+
+  <!-- Remove Background Image -->
+  <div class="bg-none p-4 text-center border border-gray-400">
+    No Background Image
+  </div>
+
+  <!-- Gradient -->
+  <div class="bg-gradient-to-r from-green-400 to-blue-500 text-white p-4 text-center font-bold">
+    Gradient Background (Left to Right)
+  </div>
+
+  <!-- Background Position -->
+  <div class="bg-[url('1.jpeg')] bg-top bg-no-repeat h-32 w-full border border-gray-400 flex items-end justify-center text-black font-bold">
+    Background Top
+  </div>
+
+  <!-- Background Size -->
+  <div class="bg-[url('2.jpeg')] bg-contain bg-no-repeat h-32 w-full border border-gray-400 flex items-center justify-center text-black font-bold">
+    Background Contain
+  </div>
+
+  <div class="bg-[url('2.jpeg')] bg-cover bg-no-repeat h-32 w-full border border-gray-400 flex items-center justify-center text-white font-bold">
+    Background Cover
+  </div>
+
+  <!-- Background Repeat -->
+  <div class="bg-[url('me.png')] bg-repeat h-32 w-full border border-gray-400">
+    Repeated Background
+  </div>
+
+  <div class="bg-[url('me.png')] bg-no-repeat h-32 w-full border border-gray-400">
+    No Repeat
+  </div>
+
+  <div class="bg-[url('me.png')] bg-repeat-x h-32 w-full border border-gray-400">
+    Repeat Horizontally
+  </div>
+
+  <div class="bg-[url('me.png')] bg-repeat-y h-32 w-full border border-gray-400">
+    Repeat Vertically
+  </div>
+
+  <!-- Background Attachment -->
+  <div class="bg-[url('bggg.jpg')] bg-fixed h-32 w-full flex items-center justify-center text-green-600 font-bold">
+    Background Fixed
+  </div>
+
+  <div class="bg-[url('me.png')] bg-local h-32 w-full flex items-center justify-center text-green-600 font-bold">
+    Background Local
+  </div>
+
+  <div class="bg-[url('me.png')] bg-scroll h-32 w-full flex items-center justify-center text-green-600 font-bold">
+    Background Scroll
+  </div>
+
+  <!-- Background Clip -->
+  <h2 class="text-xl font-bold mt-4">Background Clip Text</h2>
+  <p class="bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent text-3xl font-bold">
+    Clipped Gradient Text
+  </p>
+
+</body>
+</html>
